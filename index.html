@@ -1,233 +1,552 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fullstack Developer - Ilham Royani</title>
-    <!-- Tailwind CSS CDN -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilham Royani | Web Developer & System Engineer</title>
+
+    <meta
+        name="description"
+        content="Ilham Royani - Web Developer with 5+ years experience in Laravel, React.js, REST API, Server Management, Enterprise Systems, Payment Gateway, and System Integration."
+    />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom scroll-behavior for smooth scrolling */
         html {
             scroll-behavior: smooth;
         }
+
+        body {
+            font-family: "Inter", sans-serif;
+        }
     </style>
 </head>
-<body class="min-h-screen bg-gray-100 text-gray-800">
 
-    <!-- Bagian Header -->
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 shadow-lg rounded-b-2xl">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-                <h1 class="text-4xl font-bold tracking-tight">Ilham Royani</h1>
-                <p class="text-xl mt-1 opacity-90">Fullstack Developer</p>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow-xl rounded-b-3xl">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-extrabold">
+                        Ilham Royani
+                    </h1>
+
+                    <p class="mt-3 text-lg md:text-xl text-blue-100">
+                        Web Developer • Laravel Developer • System Integration
+                    </p>
+
+                    <div class="mt-4 flex flex-wrap gap-3 text-sm">
+                        <span class="bg-white/10 px-3 py-1 rounded-full">
+                            5+ Years Experience
+                        </span>
+
+                        <span class="bg-white/10 px-3 py-1 rounded-full">
+                            Enterprise System
+                        </span>
+
+                        <span class="bg-white/10 px-3 py-1 rounded-full">
+                            REST API
+                        </span>
+
+                        <span class="bg-white/10 px-3 py-1 rounded-full">
+                            Server Management
+                        </span>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="flex flex-wrap gap-5 text-sm md:text-base font-medium">
+                        <li>
+                            <a href="#about" class="hover:text-blue-200 transition">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#skills" class="hover:text-blue-200 transition">
+                                Skills
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#experience" class="hover:text-blue-200 transition">
+                                Experience
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#projects" class="hover:text-blue-200 transition">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#certifications" class="hover:text-blue-200 transition">
+                                Certifications
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contact" class="hover:text-blue-200 transition">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
-            <nav>
-                <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
-                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">Tentang Saya</a></li>
-                    <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Keterampilan</a></li>
-                    <li><a href="#projects" class="hover:text-blue-200 transition duration-300">Proyek</a></li>
-                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Kontak</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <!-- Bagian Tentang Saya -->
-    <section id="about" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
-        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Tentang Saya</h2>
-        <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-            <div class="text-lg leading-relaxed text-gray-700">
-                <p class="mb-3">
-                    Halo! Saya seorang <b>Fullstack Developer</b> dengan pengalaman dalam membangun aplikasi web yang efisien, skalabel, dan ramah pengguna. Saya memiliki passion dalam menciptakan solusi teknologi yang inovatif dan memecahkan masalah kompleks.
-                </p>
+    <!-- ABOUT -->
+    <section id="about" class="container mx-auto px-6 py-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-blue-700 mb-6">
+                About Me
+            </h2>
+
+            <div class="space-y-4 text-gray-700 leading-relaxed text-lg">
                 <p>
-                    Saya mahir dalam mengembangkan baik di sisi <b>frontend</b> maupun <b>backend</b>, dengan pemahaman kuat tentang basis data dan arsitektur sistem. Saya selalu bersemangat untuk mempelajari teknologi baru dan menerapkan praktik terbaik dalam setiap proyek.
+                    I am a Web Developer with more than 5 years of experience in developing and maintaining enterprise web applications using Laravel, PHP, MySQL, React.js, and REST API.
+                </p>
+
+                <p>
+                    Experienced in server deployment, system security, Academic Information Systems (SIMAKAD), Financial Systems (SIMKEU), payroll systems, HR systems, Host-to-Host integration, Payment Gateway, and WhatsApp Gateway integration.
+                </p>
+
+                <p>
+                    Able to work independently or collaboratively in teams to build scalable, secure, and user-friendly applications while maintaining system stability and operational reliability.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Bagian Keterampilan -->
-    <section id="skills" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
-        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Keterampilan</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Keterampilan Frontend -->
-            <div>
-                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
-                    <!-- Icon SVG untuk Frontend (Contoh: monitor/web dev icon) -->
-                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-1.25-3M15 10V5l-1-1H9l-1 1v5m5 0h.01M12 12h.01M12 15h.01M12 18h.01M7 12h.01M17 12h.01M7 15h.01M17 15h.01M7 18h.01M17 18h.01"></path></svg>
-                    Frontend
-                </h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>React.js</li>
-                    <li>JavaScript</li>
-                    <li>HTML5, CSS3, Tailwind CSS, Bootstrap</li>
-                </ul>
-            </div>
+    <!-- SKILLS -->
+    <section id="skills" class="container mx-auto px-6 pb-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-blue-700 mb-8">
+                Technical Skills
+            </h2>
 
-            <!-- Keterampilan Backend -->
-            <div>
-                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
-                    <!-- Icon SVG untuk Backend (Contoh: server/database icon) -->
-                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path></svg>
-                    Backend
-                </h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>PHP (Laravel, CodeIgniter)</li>
-                    <li>RESTful APIs</li>
-                    <li>Node.js (Hapi)</li>
-                </ul>
-            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <!-- Keterampilan Basis Data & DevOps -->
-            <div>
-                <h3 class="text-2xl font-medium text-indigo-600 mb-4 flex items-center">
-                    <!-- Icon SVG untuk Database/DevOps (Contoh: cloud/database icon) -->
-                    <svg class="w-6 h-6 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10m0 0h16M4 17l4-4 4 4 4-4 4 4"></path></svg>
-                    Basis Data & Lainnya
-                </h3>
-                <ul class="list-disc list-inside text-gray-700 space-y-2">
-                    <li>MySQL, MongoDB</li>
-                    <li>Git, GitHub/GitLab</li>
-                </ul>
+                <!-- FRONTEND -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">
+                        Frontend
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• React.js</li>
+                        <li>• JavaScript</li>
+                        <li>• HTML5 & CSS3</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• Bootstrap</li>
+                        <li>• KendoUI</li>
+                    </ul>
+                </div>
+
+                <!-- BACKEND -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">
+                        Backend
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• PHP</li>
+                        <li>• Laravel</li>
+                        <li>• CodeIgniter 3</li>
+                        <li>• Node.js</li>
+                        <li>• Express.js</li>
+                        <li>• REST API</li>
+                    </ul>
+                </div>
+
+                <!-- DATABASE -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">
+                        Database & Server
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• MySQL</li>
+                        <li>• MongoDB</li>
+                        <li>• Server Deployment</li>
+                        <li>• Application Hosting</li>
+                        <li>• System Maintenance</li>
+                        <li>• Basic System Security</li>
+                    </ul>
+                </div>
+
+                <!-- TOOLS -->
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-4">
+                        Tools & Integration
+                    </h3>
+
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Git & GitHub</li>
+                        <li>• Postman</li>
+                        <li>• Visual Studio Code</li>
+                        <li>• Payment Gateway</li>
+                        <li>• WhatsApp Gateway</li>
+                        <li>• Technical Documentation</li>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Bagian Proyek -->
-    <section id="projects" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
-        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Proyek</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Proyek 1 -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Bedukmutu</h3>
-                <p class="text-gray-600 mb-4">
-Aplikasi Eretail merupkan aplikasi marketplace yang digunakan untuk jual beli produk bagi kalangan Civitas Akademik maupun Organisasi.
-                </p>
-                <p class="text-sm font-medium text-gray-500 mb-3">
-                    <strong>Teknologi:</strong> Codeigniter 3, Mysql, Bootsrap 3
-                </p>
-                <div class="flex space-x-3">
-                    <a href="https://bedukmutu.id/login" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
-                        Lihat Demo
-                        <!-- Icon SVG untuk Demo -->
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                    <a href="https://github.com/hamroy/ERetail-MARKETPLACE" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
-                        Kode Sumber
-                        <!-- Icon SVG untuk Kode Sumber -->
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
-                    </a>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="container mx-auto px-6 pb-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-blue-700 mb-8">
+                Work Experience
+            </h2>
+
+            <div class="space-y-8">
+
+                <!-- UMB -->
+                <div class="border-l-4 border-blue-600 pl-6">
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        PT Umat Mandiri Berkemajuan (PT UMB)
+                    </h3>
+
+                    <p class="text-blue-600 font-medium mt-1">
+                        Web Developer • January 2021 - Present
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li>• Managed server deployment, hosting, and system security.</li>
+                        <li>• Developed and maintained SIMAKAD and SIMKEU systems.</li>
+                        <li>• Built PMB (New Student Admission) applications.</li>
+                        <li>• Managed payroll, HR systems, and Host-to-Host integrations.</li>
+                        <li>• Integrated Payment Gateway and WhatsApp Gateway.</li>
+                        <li>• Upgraded Laravel applications from version 8 to 10.</li>
+                        <li>• Created technical documentation and system maintenance support.</li>
+                    </ul>
                 </div>
+
+                <!-- MSI -->
+                <div class="border-l-4 border-indigo-600 pl-6">
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        PT Mandiri Solution Informatika (MSI)
+                    </h3>
+
+                    <p class="text-indigo-600 font-medium mt-1">
+                        Production Division • October 2021 - December 2021
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li>• Developed features for LIBSYS (Library System).</li>
+                        <li>• Maintained and optimized databases.</li>
+                        <li>• Assisted in troubleshooting and application maintenance.</li>
+                    </ul>
+                </div>
+
+                <!-- SDM -->
+                <div class="border-l-4 border-green-600 pl-6">
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        CV Surya Dian Mandiri
+                    </h3>
+
+                    <p class="text-green-600 font-medium mt-1">
+                        Production Staff IT • August 2016 - October 2020
+                    </p>
+
+                    <ul class="mt-4 space-y-2 text-gray-700">
+                        <li>• Developed marketplace applications.</li>
+                        <li>• Built hotel billing systems.</li>
+                        <li>• Developed school attendance systems.</li>
+                        <li>• Created asset complaint management systems.</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <!-- Proyek 2 -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Aplikasi Billing Hotel</h3>
-                <p class="text-gray-600 mb-4">
-                Aplikasi Billing Hotel digunakan untuk Resepsionis Hotel dalam melakukan entry data pemasukkan hotel dan pemilik/owner Hotel dalam mengelola keungan masuk dan keluar.
-                </p>
-                <p class="text-sm font-medium text-gray-500 mb-3">
-                    <strong>Teknologi:</strong> Codeigniter 3, Mysql, Bootsrap 3
-                </p>
-                <div class="flex space-x-3">
-                    <a href="https://kusumahotel.sediapp.online/" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
-                        Lihat Demo
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                    <a href="https://github.com/hamroy/ebilling-hotel" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
-                        Kode Sumber
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Proyek 3 -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">PMB/Penamru Mahasiswa</h3>
-                <p class="text-gray-600 mb-4">
-                   Mengembangkan sistem web untuk mengelola proses pendaftaran, seleksi, dan penerimaan calon mahasiswa baru. Sistem ini membantu perguruan tinggi dalam memproses data pendaftar, jadwal ujian, hingga pengumuman hasil seleksi
-                </p>
-                <p class="text-sm font-medium text-gray-500 mb-3">
-                    <strong>Teknologi:</strong> Laravel 10, Tailwind CSS
-                </p>
-                <div class="flex space-x-3">
-                    <a href="https://pmb.utc-umy.id/login" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
-                        Lihat Demo
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                    <a href="https://github.com/utcilham/Penmaru---UMB" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition duration-300 text-sm">
-                        Kode Sumber
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 6l-4 4 4 4"></path></svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Proyek 4 -->
-            <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h3 class="text-2xl font-semibold text-indigo-700 mb-2">SIM Aduan Aset Kampus</h3>
-                <p class="text-gray-600 mb-4">
-                    Aplikasi sistem informasi untuk pengelolaan aduan terkait aset kampus. Staf/Unit dapat melaporkan kerusakan atau masalah aset, 
-                    yang kemudian diteruskan ke unit terkait untuk ditindaklanjuti. Sistem ini membantu meningkatkan transparansi, efisiensi, 
-                    dan kecepatan respon dalam manajemen aset kampus.
-                </p>
-                <p class="text-sm font-medium text-gray-500 mb-3">
-                    <strong>Teknologi:</strong> Codeigniter3, KendoUi, Bootstrap, Jquery
-                </p>
-                <div class="flex space-x-3">
-                    <a href="https://simaduan.umy.ac.id/" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 text-sm">
-                        Lihat
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                    </a>
-                </div>
-            </div>
-            
         </div>
     </section>
 
-    <!-- Bagian Kontak -->
-    <section id="contact" class="container mx-auto p-6 my-8 bg-white shadow-xl rounded-xl">
-        <h2 class="text-3xl font-semibold text-blue-700 mb-6 border-b-2 pb-2 border-blue-300">Kontak</h2>
-        <p class="text-lg text-gray-700 mb-4">
-            Tertarik untuk berkolaborasi atau ingin mengetahui lebih lanjut? Jangan ragu untuk menghubungi saya melalui saluran berikut:
+    <!-- PROJECTS -->
+    <section id="projects" class="container mx-auto px-6 pb-10">
+
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-blue-700 mb-8">
+                Featured Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- PROJECT -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+                        PMB / Student Admission System
+                    </h3>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        Web-based system for managing student registration, selection process, examination scheduling, and admission workflows for universities.
+                    </p>
+
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technology:</strong>
+                        Laravel 10, REST API, Tailwind CSS, MySQL
+                    </div>
+
+                    <div class="mt-5 flex gap-3">
+                        <a
+                            href="https://pmb.utc-umy.id/login"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJECT -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+                        SIM Aduan Aset Kampus
+                    </h3>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        Asset complaint management system for campus operational reporting and maintenance workflows.
+                    </p>
+
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technology:</strong>
+                        CodeIgniter 3, KendoUI, Bootstrap, jQuery
+                    </div>
+
+                    <div class="mt-5 flex gap-3">
+                        <a
+                            href="https://simaduan.umy.ac.id/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJECT -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+                        Bedukmutu Marketplace
+                    </h3>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        Marketplace platform for academic communities and organizations to manage product transactions online.
+                    </p>
+
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technology:</strong>
+                        CodeIgniter 3, MySQL, Bootstrap
+                    </div>
+
+                    <div class="mt-5 flex gap-3">
+                        <a
+                            href="https://bedukmutu.id/login"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="https://github.com/hamroy/ERetail-MARKETPLACE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJECT -->
+                <div class="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition">
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-3">
+                        Hotel Billing System
+                    </h3>
+
+                    <p class="text-gray-700 leading-relaxed">
+                        Hotel financial and billing system for managing guest transactions, operational income, and reporting.
+                    </p>
+
+                    <div class="mt-4 text-sm text-gray-600">
+                        <strong>Technology:</strong>
+                        CodeIgniter 3, MySQL, Bootstrap
+                    </div>
+
+                    <div class="mt-5 flex gap-3">
+                        <a
+                            href="https://kusumahotel.sediapp.online/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="https://github.com/hamroy/ebilling-hotel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded-lg text-sm transition"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATION -->
+    <section id="certifications" class="container mx-auto px-6 pb-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-blue-700 mb-8">
+                Certifications
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-50 rounded-xl p-5">
+                    <h3 class="font-semibold text-lg">
+                        Architecting on AWS
+                    </h3>
+
+                    <p class="text-gray-600">
+                        AWS Cloud Architecture • 2023
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-5">
+                    <h3 class="font-semibold text-lg">
+                        Beginner Backend Developer
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Dicoding • 2023
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-5">
+                    <h3 class="font-semibold text-lg">
+                        Laravel Web Development
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Sanbercode • 2020
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-5">
+                    <h3 class="font-semibold text-lg">
+                        Microsoft Office Specialist
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Microsoft • 2023
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container mx-auto px-6 pb-10">
+        <div class="bg-white rounded-2xl shadow-lg p-8">
+
+            <h2 class="text-3xl font-bold text-blue-700 mb-8">
+                Contact
+            </h2>
+
+            <p class="text-lg text-gray-700 mb-6">
+                Available for freelance, remote work, and full-time opportunities.
+            </p>
+
+            <div class="space-y-4 text-lg">
+
+                <div>
+                    <strong>Email:</strong>
+                    <a
+                        href="mailto:hamroy1228@gmail.com"
+                        class="text-blue-600 hover:underline"
+                    >
+                        hamroy1228@gmail.com
+                    </a>
+                </div>
+
+                <div>
+                    <strong>WhatsApp:</strong>
+                    <a
+                        href="https://wa.me/6285712136302"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-green-600 hover:underline"
+                    >
+                        +62 857-1213-6302
+                    </a>
+                </div>
+
+                <div>
+                    <strong>GitHub:</strong>
+                    <a
+                        href="https://github.com/hamroy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 hover:underline"
+                    >
+                        github.com/hamroy
+                    </a>
+                </div>
+
+                <div>
+                    <strong>Portfolio:</strong>
+                    <a
+                        href="https://hamroy.github.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-blue-600 hover:underline"
+                    >
+                        hamroy.github.io
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+        <p>
+            © <script>document.write(new Date().getFullYear())</script>
+            Ilham Royani. All Rights Reserved.
         </p>
-        <div class="flex flex-col space-y-4 text-lg">
-            <div class="flex items-center">
-                <svg class="w-6 h-6 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                Email: <a href="mailto:emailanda@example.com" class="ml-2 text-blue-600 hover:underline">hamroy1228@gmail.com</a>
-            </div>
-          <div class="flex items-center">
-                <svg class="w-6 h-6 mr-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 
-                        00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                WhatsApp: 
-                <a href="https://wa.me/6285712136302" target="_blank" class="ml-2 text-green-600 hover:underline">
-                    +62 857-1213-6302
-                </a>
-            </div>
-            <div class="flex items-center">
-                <svg class="w-6 h-6 mr-3 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19l-7-7 7-7m2 14l7-7-7-7"></path></svg>
-                GitHub: <a href="https://github.com/hamroy" target="_blank" rel="noopener noreferrer" class="ml-2 text-blue-600 hover:underline">https://github.com/hamroy</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bagian Footer -->
-    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-t-2xl">
-        <div class="container mx-auto text-center text-sm">
-            &copy; <script>document.write(new Date().getFullYear())</script> ilham royani. Hak Cipta Dilindungi.
-        </div>
     </footer>
 
 </body>
 </html>
-
